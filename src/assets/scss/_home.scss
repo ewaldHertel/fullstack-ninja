@@ -1,0 +1,23 @@
+.home {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: url('../img/bg_1.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+    .text h2 {
+        font-family: 'Edo';
+
+        span {
+            color: $highlightcolor;
+        }
+    }
+
+    .overlay {
+		width: 100vw;
+		height: 100vh;
+		position: absolute;
+        background-color: rgba(#000, 0.9);
+	}
+
+}

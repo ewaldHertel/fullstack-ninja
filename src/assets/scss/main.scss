@@ -1,0 +1,50 @@
+@import './settings';
+@import './fullpage';
+@import './navigation';
+@import './home';
+@import './footer';
+@import './privacy';
+@import './contact';
+@import './service';
+@import './aboutme';
+@import './work';
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+        color: $highlightcolor;
+        @include easeOut;
+    }
+  }
+
+.view-details {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: 25px;
+    padding: 10px;
+    border: solid 1px $highlightcolor;
+    border-radius: 12px;
+
+    span{
+        padding-left: 10px;
+    }
+
+    i {
+        font-size: 1rem;
+        line-height: 25px;
+    }
+}

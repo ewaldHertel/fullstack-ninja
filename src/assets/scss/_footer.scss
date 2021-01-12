@@ -1,0 +1,63 @@
+.footer {
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: $forecolor;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  
+    p {
+      margin: 0;
+    }
+  
+    span {
+      cursor: pointer;
+    }
+
+    .icons {
+        ul.social {
+            position: fixed;
+            list-style: none;
+            margin: 0;
+          
+            li {
+              padding: 0.4rem;
+              display: inline-block;
+              
+          
+              a {
+                color: #fff;
+                text-decoration: none;
+                &:hover {
+                  color: $highlightcolor;
+                  @include easeOut;
+                }
+              }
+            }
+        }
+    }
+
+    .copy {
+
+    }
+
+    .menu {
+        padding-right: 40px;
+
+        a {
+            margin-left: 10px;
+            color: #fff;
+            text-decoration: none;
+
+            &:hover {
+                color: $highlightcolor;
+                @include easeOut;
+            }
+        }
+    }
+  }

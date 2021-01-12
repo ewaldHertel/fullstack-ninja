@@ -1,0 +1,131 @@
+$firstcolor: #0a0a0a;
+$secondcolor: #1b1b1b;
+$thirdcolor: #c2c2c2;
+$forecolor: #f5f5f5;
+$highlightcolor: #ce3126;
+
+
+@mixin easeOut {
+  transition: all 500ms ease-out;
+}
+
+
+@font-face {
+  font-family: 'Edo';
+  src: url('../font/Edo.woff2') format('woff2'),
+    url('../font/Edo.woff') format('woff'),
+    url('../font/Edo.svg#Edo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0) translate3d(0px, 0px, 0px);
+  }
+  25% {
+    opacity: 0.25;
+    transform: scale(0.25);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.5);
+  }
+  75% {
+    opacity: 0.75;
+    transform: scale(0.75);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  25% {
+    opacity: 0.75;
+    transform: scale(0.75);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.5);
+  }
+  75% {
+    opacity: 0.25;
+    transform: scale(0.25);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0) translate3d(0px, 0px, 0px);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  25% {
+    opacity: 0.25;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  75% {
+    opacity: 0.75;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.progressbar {
+  position: relative;
+  height: 30px;
+  width: 350px;
+
+  .inner {
+    background: #1da598;
+    height: 100%;
+    transition: width 0.2s ease-in;
+  }
+}
